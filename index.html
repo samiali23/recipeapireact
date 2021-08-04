@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Zodiacs at a Restaurant</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- external Google Font link -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">	
+		<meta name="twitter:card" content="summary"></meta>
+
+	</head>
+	<body>
+		<h1>Zodiacs at a Restaurant</h1>
+	<section class="user-date">
+		<select name="month" id="month">
+			<option value="" disabled selected>Choose month</option>
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+			<option value="April">April</option>
+			<option value="May">May</option>
+			<option value="June">June</option>
+			<option value="July">July</option>
+			<option value="August">August</option>
+			<option value="September">September</option>
+			<option value="October">October</option>
+			<option value="November">November</option>
+			<option value="December">December</option>
+		</select>
+		<input id="day" type="text" min="0" max="31" maxlength="2" autocomplete="off" placeholder="Enter Birth Day">
+		<input id="show-me-button" type="button" value="Show My Sign">
+	</section>
+		<section class="reveal">
+			<p id="quote"></p>
+			<span id="sign-signature"></span>
+		</section>
+
+		<footer>
+			<a target="_blank" href="https://www.purewow.com/wellness/astrology-memes">INSPIRED BY SOFIA KRAUSHAAR</a>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

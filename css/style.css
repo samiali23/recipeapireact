@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  border-bottom: 4px solid rgb(249, 117, 112);
+  text-align: center;
+  font-size: 80px;
+}
+
+.user-date {
+  text-align: center;
+}
+
+.reveal {
+  font-size: 40px;
+  text-align: center;
+}
+
+#sign-signature {
+  color: rgb(241, 80, 75);
+}
+
+#day,
+#month,
+#show-me-button {
+  border: 1px solid black;
+  height: 30px;
+  border: none;
+  background: rgb(249, 249, 249);
+  outline: none;
+}
+
+#show-me-button {
+  background: rgb(47, 52, 64);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin-bottom: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a:visited {
+  color: black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  #day,
+  #month {
+    width: 44.5%;
+  }
+
+  #show-me-button {
+    width: 90%;
+    margin-top: 5px;
+  }
+
+  .reveal {
+    margin: 0 10%;
+    font-size: 30px;
+  }
+}
